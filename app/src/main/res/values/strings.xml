@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">PhotoBlog</string>
+
+    <!--activity_login.xml-->
+    <string name="login_desp">login_page_logo</string>
+    <string name="Email_hint">Your E-mail...</string>
+    <string name="Pass_hint">Password...</string>
+    <string name="login_text">Login to Account</string>
+    <string name="login_reg_text">Need a new Account?</string>
+
+    <!--activity_register.xml-->
+    <string name="ConfirmPass_hint">Confirm Password...</string>
+    <string name="create_account">Create New Account</string>
+    <string name="already_text">Already have an account?</string>
+
+    <!--main_menu.xml-->
+    <string name="action_search">Search</string>
+    <string name="action_account">Account Settings</string>
+    <string name="action_logout">Log Out</string>
+
+    <!--activity_setup.xml-->
+    <string name="setup_account_settings">Save Account Settings</string>
+    <string name="name_text">Your Name...</string>
+
+    <!--activity_new_post.xml-->
+    <string name="newPost_Desp">Add Description...</string>
+    <string name="Post_hint">Post Blog</string>
+</resources>
