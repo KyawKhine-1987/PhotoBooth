@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PhotoBlog</string>
+    <string name="app_name">Photo Blog</string>
 
     <!--activity_login.xml-->
     <string name="login_desp">login_page_logo</string>
@@ -25,4 +25,18 @@
     <!--activity_new_post.xml-->
     <string name="newPost_Desp">Add Description...</string>
     <string name="Post_hint">Post Blog</string>
+
+    <!--activity_main.xml-->
+    <string name="bottom_home">Home</string>
+    <string name="bottom_notification">Notification</string>
+    <string name="bottom_account">Account</string>
+
+    <!--fragment_notification.xml-->
+    <string name="noti">Notification Fragment</string>
+
+    <!--fragment_home.xml-->
+    <string name="home">Home Fragment</string>
+
+    <!--fragment_account.xml-->
+    <string name="account">Account Fragment</string>
 </resources>

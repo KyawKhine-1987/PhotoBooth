@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-      xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/mnActionSearch"
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
         android:title="@string/action_search"
-        app:showAsAction="always"
-        android:icon="@drawable/ic_search"/>
+        app:showAsAction="always"/>
 
-    <item android:id="@+id/mnActionAccountSettings"
+    <item
+        android:id="@+id/action_accountSettings"
         android:title="@string/action_account"/>
 
-    <item android:title="@string/action_logout"
-          android:id="@+id/mnActionLogOut"/>
+    <item
+        android:id="@+id/action_logOut"
+        android:title="@string/action_logout"/>
 </menu>

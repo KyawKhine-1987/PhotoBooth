@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.freelance.android.photoblog.NewPostActivity">
+    tools:context="com.freelance.android.photoblog.activities.NewPostActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/tbNewPost"
@@ -36,7 +36,7 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/newPost_Desp"
-        android:inputType="textMultiLine"
+        android:maxLength="125"
         android:padding="20dp"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ivNewPost"/>
 
     <Button
-        android:id="@+id/btnReg"
+        android:id="@+id/btnNewPost"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -59,4 +59,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etNewPostDesp"/>
+
+    <ProgressBar
+        android:id="@+id/pbNewPost"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/tbNewPost"/>
+
 </android.support.constraint.ConstraintLayout>

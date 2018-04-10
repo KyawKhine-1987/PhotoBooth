@@ -1,4 +1,4 @@
-package com.freelance.android.photoblog;
+package com.freelance.android.photoblog.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.freelance.android.photoblog.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -70,6 +71,8 @@ public class LoginActivity extends AppCompatActivity {
 
                             if (task.isSuccessful()) {
                                 sendToMain();
+                                //TODO LIST for success login toast message.
+                                Toast.makeText(LoginActivity.this, "Log In is successful.", Toast.LENGTH_SHORT).show();
 
                             } else {
                                 String errorMessage = task.getException().getMessage();
@@ -99,8 +102,9 @@ public class LoginActivity extends AppCompatActivity {
     private void sendToMain() {
         Log.i(LOG_TAG, "Test : sendToMain() is called...");
 
-        Intent i = new Intent(LoginActivity.this, LoginActivity.class);
-        startActivity(i);
+        //Intent i = new Intent(LoginActivity.this, LoginActivity.class);
+        Intent main = new Intent(LoginActivity.this, MainActivity.class);
+        startActivity(main);
         finish();
     }
 }
