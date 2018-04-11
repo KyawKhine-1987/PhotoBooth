@@ -26,6 +26,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <ImageView
+                android:id="@+id/ivBlogLike"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvBlogDesp"
+                app:srcCompat="@drawable/action_like_gray" />
+
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/civBlogUserImage"
                 android:layout_width="wrap_content"
@@ -41,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="16dp"
                 android:text="Username"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/civBlogUserImage"
@@ -70,16 +82,50 @@
             <TextView
                 android:id="@+id/tvBlogDesp"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="24dp"
-                android:layout_marginEnd="16dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
                 android:text="Lorem ipsum dolor sit amet, soluta regione urbanitas vis in, qui elit populo ut."
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/ivBlogImage"/>
+
+            <TextView
+                android:id="@+id/tvBlogLikeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="0  Likes"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivBlogLike"
+                app:layout_constraintTop_toBottomOf="@+id/tvBlogDesp" />
+
+            <TextView
+                android:id="@+id/tvBlogCommentCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="0  Comments"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvBlogDesp" />
+
+            <ImageView
+                android:id="@+id/ivBlogComment"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvBlogCommentCount"
+                app:layout_constraintTop_toBottomOf="@+id/tvBlogDesp"
+                app:srcCompat="@drawable/action_comment" />
 
         </android.support.constraint.ConstraintLayout>
 

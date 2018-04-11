@@ -71,7 +71,6 @@ public class LoginActivity extends AppCompatActivity {
 
                             if (task.isSuccessful()) {
                                 sendToMain();
-                                //TODO LIST for success login toast message.
                                 Toast.makeText(LoginActivity.this, "Log In is successful.", Toast.LENGTH_SHORT).show();
 
                             } else {

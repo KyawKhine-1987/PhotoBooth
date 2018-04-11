@@ -31,13 +31,17 @@
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat"/>
-        <activity android:name=".activities.NewPostActivity"
+        <activity
+            android:name=".activities.NewPostActivity"
+            android:parentActivityName=".activities.MainActivity">
+        </activity>
+        <activity
+            android:name=".activities.CommentsActivity"
             android:parentActivityName=".activities.MainActivity">
         </activity>
     </application>
 
-</manifest>
-
-<!--android:name="android.support.multidex.MultiDexApplication"
+</manifest><!--
+android:name="android.support.multidex.MultiDexApplication"
 solved that "unable to merge dex"
 -->

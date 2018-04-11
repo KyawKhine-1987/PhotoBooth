@@ -39,4 +39,7 @@
 
     <!--fragment_account.xml-->
     <string name="account">Account Fragment</string>
+
+    <!--activity_comments.xml-->
+    <string name="comments">Your comment here ...</string>
 </resources>

@@ -8,7 +8,7 @@ import java.util.Date;
  * Created by Kyaw Khine on 04/10/2018.
  */
 
-public class BlogPost {
+public class BlogPost extends BlogPostId{
 
     private static final String LOG_TAG = BlogPost.class.getName();
 

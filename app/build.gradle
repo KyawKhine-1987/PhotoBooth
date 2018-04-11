@@ -5,7 +5,7 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.freelance.android.photoblog"
-        minSdkVersion 15
+        minSdkVersion 21
         targetSdkVersion 27
         multiDexEnabled true //solved that "unable to merge dex"
         versionCode 1
