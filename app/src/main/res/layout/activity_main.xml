@@ -48,21 +48,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bnvMain"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tbMain">
-
-    </FrameLayout>
-
+        app:layout_constraintTop_toBottomOf="@+id/tbMain"/>
 
 </android.support.constraint.ConstraintLayout>
 
-
-    <!-- <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="This is MainActivity."
-            android:textStyle="bold|italic"
-            android:textColor="@color/colorPrimaryDark"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>-->

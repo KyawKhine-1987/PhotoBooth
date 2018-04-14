@@ -14,6 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <!--MainActivity.java-->
         <activity
             android:name=".activities.MainActivity"
             android:screenOrientation="portrait">
@@ -23,25 +25,38 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <!--LoginActivity.java-->
         <activity
             android:name=".activities.LoginActivity"
             android:screenOrientation="portrait"/>
+
+        <!--RegisterActivity.java-->
         <activity android:name=".activities.RegisterActivity"/>
+
+        <!--SetupActivity.java-->
         <activity android:name=".activities.SetupActivity"/>
+
+
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat"/>
+
+        <!--NewPostActivity.java-->
         <activity
             android:name=".activities.NewPostActivity"
             android:parentActivityName=".activities.MainActivity">
         </activity>
+
+        <!--CommentsActivity.java-->
         <activity
             android:name=".activities.CommentsActivity"
             android:parentActivityName=".activities.MainActivity">
         </activity>
     </application>
 
-</manifest><!--
+</manifest>
+<!--
 android:name="android.support.multidex.MultiDexApplication"
 solved that "unable to merge dex"
 -->

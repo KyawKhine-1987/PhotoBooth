@@ -42,4 +42,5 @@
 
     <!--activity_comments.xml-->
     <string name="comments">Your comment here ...</string>
+    <string name="Title_Comment">Comments :</string>
 </resources>

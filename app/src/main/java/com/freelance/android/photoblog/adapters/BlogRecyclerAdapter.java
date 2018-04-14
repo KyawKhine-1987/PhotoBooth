@@ -70,6 +70,7 @@ public class BlogRecyclerAdapter extends RecyclerView.Adapter<BlogRecyclerAdapte
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         Log.i(LOG_TAG, "Test : onBindViewHolder() is called...");
 
+        mContext = holder.mView.getContext(); //test code for Context April 12, 2018
         holder.setIsRecyclable(false);
 
         String userId = mBlogPostList.get(position).getUser_id();

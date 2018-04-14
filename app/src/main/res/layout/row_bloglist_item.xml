@@ -56,6 +56,7 @@
                 android:layout_marginTop="16dp"
                 android:text="Username"
                 android:textStyle="bold"
+                android:fontFamily="courier"
                 app:layout_constraintStart_toEndOf="@+id/civBlogUserImage"
                 app:layout_constraintTop_toTopOf="parent"/>
 
@@ -65,6 +66,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:text="Blog Post Date"
+                android:fontFamily="courier"
                 app:layout_constraintStart_toEndOf="@+id/civBlogUserImage"
                 app:layout_constraintTop_toBottomOf="@+id/tvBlogUserName"/>
 
@@ -87,6 +89,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:text="Lorem ipsum dolor sit amet, soluta regione urbanitas vis in, qui elit populo ut."
+                android:fontFamily="courier"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/ivBlogImage"/>
@@ -99,6 +102,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
                 android:text="0  Likes"
+                android:fontFamily="courier"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/ivBlogLike"
                 app:layout_constraintTop_toBottomOf="@+id/tvBlogDesp" />
@@ -111,6 +115,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="8dp"
                 android:text="0  Comments"
+                android:fontFamily="courier"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvBlogDesp" />
